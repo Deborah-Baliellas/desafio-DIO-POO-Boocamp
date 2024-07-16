@@ -37,12 +37,15 @@ public class Main {
         System.out.println("Conteúdos inscritos de" + dev1.getNome() + ": " + dev1.getConteudosInscritos());
         dev1.progredir();
         System.out.println("Conteúdos inscritos de" + dev1.getNome() + ": " + dev1.getConteudosInscritos());
-        
+
         Dev dev2 = new Dev();
         dev2.setNome("Jonathan");
         dev2.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos de" + dev1.getNome() + ": " + dev1.getConteudosInscritos());
 
         System.out.println("Inscritos no Bootcamp: " + bootcamp.getDevsInscritos());
+
+        System.out.println("XP " + dev1.getNome() + ": " + dev1.calcularTotalXp());
+        System.out.println("XP " + dev2.getNome() + ": " + dev2.calcularTotalXp());
     }
 }
